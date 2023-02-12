@@ -224,9 +224,17 @@ class _GeoPageState extends State<GeoPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text('Your Current Location'),
-              Text(_latitude),
-              Text(_longitude),
+               Text('Your Current Location', 
+                    style: GoogleFonts.abel(
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.bold),
+              ),
+              Text(_latitude, style: GoogleFonts.abel(
+                fontSize: 35.0),
+              ),
+              Text(_longitude, style: GoogleFonts.abel(
+                fontSize: 35.0
+              )),
             ],
           ),
         ),
